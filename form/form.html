@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма з перевіркою</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="../script.js" defer></script>
+</head>
+<body>
+<div class="form-container">
+    <h1>Заповніть форму</h1>
+    <form id="infoForm" action="result.html" method="GET">
+        <label for="name">ПІБ</label>
+        <input type="text" id="name" name="name" placeholder="Прізвище І.Б.">
+        <span class="error" id="nameError"></span>
+        <label for="variant">Варіант</label>
+        <input type="text" id="variant" name="variant" placeholder="11">
+        <span class="error" id="variantError"></span>
+        <label for="group">Група (ТТ-ЧЧ)</label>
+        <input type="text" id="group" name="group" placeholder="ТТ-11">
+        <span class="error" id="groupError"></span>
+        <label for="phone">Телефон</label>
+        <input type="text" id="phone" name="phone" placeholder="(XXX)-XXX-XX-XX">
+        <span class="error" id="phoneError"></span>
+        <label for="idCard">ID-картка</label>
+        <input type="text" id="idCard" name="idCard" placeholder="ТТ №111111">
+        <span class="error" id="idCardError"></span>
+        <button type="button" onclick="validateForm()">Відправити →</button>
+    </form>
+</div>
+
+</body>
+</html>
